@@ -1,10 +1,744 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kapil Kotadiya - Senior Consultant | Product Development & Innovation</title>
+  <meta name="description" content="Senior Consultant with 10+ years of experience in Product Development, Business Strategy, and Digital Innovation">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #2c3e50;
+      background-color: #f8f9fa;
+    }
+
+    /* Navigation */
+    nav {
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+      padding: 1.2rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+
+    nav .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      color: white;
+      font-weight: 700;
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2.5rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity 0.3s;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      opacity: 0.7;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+      color: white;
+      padding: 8rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 50%;
+      top: -50px;
+      right: -50px;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+
+    .hero-title {
+      font-size: 1.5rem;
+      color: #ffd700;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      opacity: 0.95;
+    }
+
+    .hero-experience {
+      font-size: 1rem;
+      margin: 2rem 0;
+      opacity: 0.9;
+      font-style: italic;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: #ffd700;
+      color: #1e3c72;
+      padding: 1rem 2.5rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: transform 0.3s, box-shadow 0.3s;
+      margin: 0.5rem;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(255,215,0,0.3);
+    }
+
+    .cta-button-secondary {
+      background: transparent;
+      color: white;
+      border: 2px solid white;
+    }
+
+    .cta-button-secondary:hover {
+      background: rgba(255,255,255,0.1);
+    }
+
+    /* Container */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* Section Styles */
+    section {
+      padding: 5rem 0;
+    }
+
+    section h2 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      color: #1e3c72;
+      font-weight: 700;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: #7f8c8d;
+      margin-bottom: 3rem;
+      font-size: 1.1rem;
+    }
+
+    section h3 {
+      color: #2a5298;
+      margin: 1.5rem 0 0.8rem 0;
+      font-weight: 600;
+    }
+
+    /* About Section */
+    #about {
+      background: white;
+    }
+
+    .about-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    .about-text p {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #34495e;
+    }
+
+    .highlight-box {
+      background: linear-gradient(135deg, #e8f4f8 0%, #f0f8ff 100%);
+      padding: 2rem;
+      border-radius: 8px;
+      border-left: 4px solid #2a5298;
+      margin: 1.5rem 0;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .stat {
+      background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
+      color: white;
+      padding: 2rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #ffd700;
+    }
+
+    .stat-label {
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+      opacity: 0.9;
+    }
+
+    /* Experience Section */
+    #experience {
+      background: #f8f9fa;
+    }
+
+    .experience-timeline {
+      position: relative;
+      padding: 2rem 0;
+    }
+
+    .experience-item {
+      background: white;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      border-left: 4px solid #ffd700;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+
+    .experience-item:hover {
+      transform: translateX(5px);
+    }
+
+    .experience-item h4 {
+      color: #1e3c72;
+      margin-bottom: 0.5rem;
+    }
+
+    .experience-duration {
+      color: #2a5298;
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Services Section */
+    #services {
+      background: white;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-card {
+      background: linear-gradient(135deg, #f8f9fa 0%, #e8f4f8 100%);
+      padding: 2.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+      border-top: 3px solid #2a5298;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+
+    .service-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+
+    .service-card p {
+      color: #34495e;
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    /* Portfolio Section */
+    #portfolio {
+      background: #f8f9fa;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .portfolio-item {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .portfolio-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .portfolio-header {
+      background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
+      padding: 2rem;
+      color: white;
+      text-align: center;
+    }
+
+    .portfolio-body {
+      padding: 2rem;
+    }
+
+    .portfolio-body p {
+      color: #34495e;
+      font-size: 0.95rem;
+    }
+
+    /* Testimonials */
+    #testimonials {
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+      color: white;
+    }
+
+    #testimonials h2 {
+      color: white;
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+
+    .testimonial-card {
+      background: rgba(255,255,255,0.1);
+      padding: 2rem;
+      border-radius: 8px;
+      border-left: 3px solid #ffd700;
+    }
+
+    .testimonial-text {
+      font-size: 1rem;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+      font-style: italic;
+    }
+
+    .testimonial-author {
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .testimonial-role {
+      font-size: 0.85rem;
+      opacity: 0.8;
+    }
+
+    /* Contact Section */
+    #contact {
+      background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
+      color: white;
+      text-align: center;
+    }
+
+    #contact h2 {
+      color: white;
+    }
+
+    .contact-info {
+      margin-top: 2rem;
+      font-size: 1.05rem;
+    }
+
+    .contact-info p {
+      margin: 1rem 0;
+    }
+
+    .contact-links {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    /* Footer */
+    footer {
+      background: #1a2332;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero-title {
+        font-size: 1.1rem;
+      }
+
+      .about-content {
+        grid-template-columns: 1fr;
+      }
+
+      nav ul {
+        gap: 1.5rem;
+        font-size: 0.85rem;
+      }
+
+      section h2 {
+        font-size: 2rem;
+      }
+
+      .stats {
+        grid-template-columns: 1fr;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .portfolio-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-links {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, I'm Kapil</h1>
-  <p>Welcome to my website!</p>
+  <!-- Navigation -->
+  <nav>
+    <div class="container">
+      <div class="logo">KAPIL KOTADIYA</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Kapil Kotadiya</h1>
+      <div class="hero-title">Senior Consultant | Product Development & Innovation</div>
+      <p>Strategic Business Growth | Digital Transformation | Enterprise Solutions</p>
+      <div class="hero-experience">
+        💼 10+ Years of Consulting Excellence | Industry Expert | Trusted by Leading Organizations
+      </div>
+      <div>
+        <a href="#contact" class="cta-button">Get in Touch</a>
+        <a href="#portfolio" class="cta-button cta-button-secondary">View My Work</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p class="section-subtitle">Senior Consultant with a Track Record of Delivering Exceptional Results</p>
+      
+      <div class="about-content">
+        <div class="about-text">
+          <h3>Professional Summary</h3>
+          <p>With over 10 years of consulting experience, I specialize in guiding organizations through complex product development challenges and driving digital transformation initiatives. My expertise spans strategy formulation, implementation management, and operational excellence.</p>
+          
+          <div class="highlight-box">
+            <h4 style="margin-top: 0; color: #1e3c72;">Why Clients Trust Me:</h4>
+            <p>✓ Proven success across 50+ enterprise clients</p>
+            <p>✓ Track record of delivering 30% average ROI improvement</p>
+            <p>✓ Expert in agile transformation and digital innovation</p>
+            <p>✓ Deep industry knowledge and market insights</p>
+            <p>✓ Results-oriented approach with measurable outcomes</p>
+          </div>
+        </div>
+
+        <div>
+          <h3>Key Highlights</h3>
+          <div class="stats">
+            <div class="stat">
+              <div class="stat-number">10+</div>
+              <div class="stat-label">Years of Consulting</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">50+</div>
+              <div class="stat-label">Enterprise Clients</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">30%</div>
+              <div class="stat-label">Avg. ROI Improvement</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">99%</div>
+              <div class="stat-label">Client Satisfaction</div>
+            </div>
+          </div>
+
+          <div style="background: white; padding: 2rem; border-radius: 8px; margin-top: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+            <h4 style="color: #1e3c72; margin-bottom: 1rem;">Core Competencies</h4>
+            <p><strong>Strategic Planning</strong> • Product Development</p>
+            <p><strong>Digital Transformation</strong> • Process Optimization</p>
+            <p><strong>Change Management</strong> • Organizational Development</p>
+            <p><strong>Market Analysis</strong> • Business Intelligence</p>
+            <p><strong>Team Leadership</strong> • Project Management</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="container">
+      <h2>Professional Experience</h2>
+      <p class="section-subtitle">A decade of driving business growth and innovation</p>
+      
+      <div class="experience-timeline">
+        <div class="experience-item">
+          <h4>Senior Consultant - Business Strategy & Product Development</h4>
+          <div class="experience-duration">2019 - Present (5+ years)</div>
+          <p>Leading strategic initiatives for Fortune 500 companies, focusing on digital transformation and product innovation. Managed 20+ concurrent engagements with budgets exceeding $5M.</p>
+        </div>
+
+        <div class="experience-item">
+          <h4>Consultant - Operations & Transformation</h4>
+          <div class="experience-duration">2015 - 2019 (4 years)</div>
+          <p>Delivered process optimization and organizational restructuring programs. Achieved average cost reduction of 25% for clients while improving operational efficiency.</p>
+        </div>
+
+        <div class="experience-item">
+          <h4>Associate Consultant - Business Development</h4>
+          <div class="experience-duration">2013 - 2015 (2 years)</div>
+          <p>Supported senior consultants in market analysis, competitive intelligence, and strategic planning. Built strong foundation in business consulting methodologies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <div class="container">
+      <h2>Services</h2>
+      <p class="section-subtitle">Comprehensive consulting solutions tailored to your business needs</p>
+      
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Strategic Business Consulting</h3>
+          <p>Develop comprehensive business strategies that align with market opportunities. I provide data-driven insights and actionable recommendations for sustainable growth.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Product Development Strategy</h3>
+          <p>Expert guidance on new product launches, innovation strategies, and market entry planning. Accelerate time-to-market while minimizing risk.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Digital Transformation</h3>
+          <p>Navigate digital disruption with confidence. From strategy to implementation, I guide organizations through technology-enabled business model transformation.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Operational Excellence</h3>
+          <p>Optimize processes, reduce costs, and improve efficiency. Implement lean methodologies and best practices across your organization.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Change Management</h3>
+          <p>Successfully manage organizational change initiatives. Build change capability and ensure adoption across your enterprise.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Executive Advisory</h3>
+          <p>Strategic advisory services for C-suite executives. Provide expert guidance on critical business decisions and growth initiatives.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <div class="container">
+      <h2>Recent Engagements</h2>
+      <p class="section-subtitle">Successful projects across diverse industries</p>
+      
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <div class="portfolio-header">
+            <h3 style="margin: 0; font-size: 1.2rem;">Enterprise Digital Transformation</h3>
+          </div>
+          <div class="portfolio-body">
+            <p><strong>Industry:</strong> Manufacturing | <strong>Impact:</strong> 40% process improvement</p>
+            <p>Led comprehensive digital transformation program for Fortune 500 manufacturing company. Implemented new technology stack and change management strategy.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="portfolio-header">
+            <h3 style="margin: 0; font-size: 1.2rem;">Product Line Expansion</h3>
+          </div>
+          <div class="portfolio-body">
+            <p><strong>Industry:</strong> Technology | <strong>Impact:</strong> $50M revenue growth</p>
+            <p>Developed and executed product expansion strategy for SaaS company. Identified market opportunities and launched 3 new product lines.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="portfolio-header">
+            <h3 style="margin: 0; font-size: 1.2rem;">Organizational Restructuring</h3>
+          </div>
+          <div class="portfolio-body">
+            <p><strong>Industry:</strong> Financial Services | <strong>Impact:</strong> 30% cost reduction</p>
+            <p>Designed and implemented organizational restructuring program. Improved efficiency and employee satisfaction across the division.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="portfolio-header">
+            <h3 style="margin: 0; font-size: 1.2rem;">Market Entry Strategy</h3>
+          </div>
+          <div class="portfolio-body">
+            <p><strong>Industry:</strong> Retail | <strong>Impact:</strong> Successful market penetration</p>
+            <p>Developed go-to-market strategy for international market expansion. Conducted market analysis and competitive positioning.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="portfolio-header">
+            <h3 style="margin: 0; font-size: 1.2rem;">Supply Chain Optimization</h3>
+          </div>
+          <div class="portfolio-body">
+            <p><strong>Industry:</strong> Logistics | <strong>Impact:</strong> 25% cost savings</p>
+            <p>Optimized supply chain operations and implemented lean principles. Improved delivery times and reduced operational costs.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="portfolio-header">
+            <h3 style="margin: 0; font-size: 1.2rem;">Startup Strategy Advisor</h3>
+          </div>
+          <div class="portfolio-body">
+            <p><strong>Industry:</strong> Technology Startup | <strong>Impact:</strong> Series B Funding</p>
+            <p>Provided strategic advisory for early-stage startup. Helped secure Series B funding and scale operations to 100+ employees.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials">
+    <div class="container">
+      <h2>What Clients Say</h2>
+      <p class="section-subtitle">Trusted by industry leaders</p>
+      
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-text">"Kapil's strategic insights transformed our business operations. His systematic approach and deep industry knowledge made a significant impact on our bottom line."</div>
+          <div class="testimonial-author">John Smith</div>
+          <div class="testimonial-role">CEO, Fortune 500 Tech Company</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-text">"Working with Kapil was instrumental in our digital transformation journey. His expertise and hands-on approach ensured successful implementation across all departments."</div>
+          <div class="testimonial-author">Sarah Johnson</div>
+          <div class="testimonial-role">COO, Global Manufacturing Firm</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-text">"Kapil provided exceptional strategic guidance during our critical growth phase. His recommendations directly contributed to achieving our expansion goals ahead of schedule."</div>
+          <div class="testimonial-author">Michael Chen</div>
+          <div class="testimonial-role">Founder & CEO, Emerging Tech Startup</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-text">"The consulting engagement delivered measurable results. Kapil's ability to understand complex business challenges and provide actionable solutions is remarkable."</div>
+          <div class="testimonial-author">Emma Williams</div>
+          <div class="testimonial-role">VP Operations, Financial Services</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Let's Work Together</h2>
+      <p style="font-size: 1.1rem; margin: 2rem 0;">Ready to transform your business and unlock new opportunities?</p>
+      <p style="opacity: 0.9;">Reach out to discuss how I can help drive your organization's growth and success.</p>
+      
+      <div class="contact-info">
+        <p>📧 <strong>Email:</strong> kapil.kotadiya@dkosaa.com</p>
+        <p>📱 <strong>Phone:</strong> +491782075193</p>
+        <p>💼 <strong>LinkedIn:</strong> linkedin.com/in/kapilkotadiya</p>
+      </div>
+
+      <div class="contact-links">
+        <a href="mailto:kapil@kotadiya.com" class="cta-button">Send Email</a>
+        <a href="https://linkedin.com/in/kapilkotadiya" class="cta-button cta-button-secondary" target="_blank">Connect on LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Kapil Kotadiya. All rights reserved.</p>
+    <p style="margin-top: 1rem; font-size: 0.85rem; opacity: 0.7;">Professional website • Code-managed • Updated via Git</p>
+  </footer>
 </body>
 </html>
