@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapil Kotadiya | Enterprise Systems & Industrial Transformation Consultant</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://tailwindcss.com"></script>
+    <!-- FontAwesome for professional icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- HERO SECTION -->
+    <header class="bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-white py-20 px-6 border-b border-indigo-500/20">
+        <div class="max-w-6xl mx-auto text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-12">
+            <div class="space-y-6 max-w-3xl">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-indigo-500/10 border border-indigo-400/30 rounded-full text-indigo-300 text-sm font-medium tracking-wide">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Available for Corporate Advisory
+                </div>
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight bg-gradient-to-r from-white via-slate-200 to-indigo-200 bg-clip-text text-transparent">
+                    Kapil Kotadiya
+                </h1>
+                <p class="text-xl md:text-2xl font-semibold text-indigo-300">
+                    Senior Consultant &mdash; Enterprise Systems & Industrial Transformation
+                </p>
+                <p class="text-slate-300 text-lg leading-relaxed max-w-2xl">
+                    Optimizing Lead Times, Restructuring Supply Chains, and Deploying Enterprise ERP Solutions for the Automotive, Power Systems, and E-Motor Sectors.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-2 justify-center md:justify-start">
+                    <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded text-slate-300 text-sm font-mono"><i class="fa-solid fa-layer-group text-indigo-400 mr-1"></i> SAP/Oracle/Odoo</span>
+                    <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded text-slate-300 text-sm font-mono"><i class="fa-solid fa-cloud text-indigo-400 mr-1"></i> Cloud Migrations</span>
+                    <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded text-slate-300 text-sm font-mono"><i class="fa-solid fa-users-gear text-indigo-400 mr-1"></i> Remote Engineering</span>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4 pt-4 justify-center md:justify-start">
+                    <a href="#case-studies" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-500 font-medium rounded-lg shadow-lg shadow-indigo-600/20 transition-all text-center">View Case Studies</a>
+                    <a href="#contact" class="px-6 py-3 bg-slate-800 hover:bg-slate-700 font-medium rounded-lg border border-slate-700 transition-all text-center">Schedule Assessment</a>
+                </div>
+            </div>
+            <!-- Optional placeholder for a headshot or abstract corporate graphic -->
+            <div class="w-64 h-64 md:w-80 md:h-80 rounded-2xl bg-gradient-to-tr from-indigo-500 to-slate-700 flex items-center justify-center p-1 shadow-2xl border border-white/10 shrink-0">
+                <div class="w-full h-full bg-slate-900 rounded-xl flex flex-col items-center justify-center text-slate-500 p-6 text-center">
+                    <i class="fa-solid fa-user-tie text-5xl text-indigo-400 mb-3"></i>
+                    <p class="text-sm font-medium text-slate-300">Professional Headshot</p>
+                    <p class="text-xs text-slate-500 mt-1">Replace this block with your profile photo image tag</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- METHODOLOGY & FRAMEWORK -->
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Rigorous Consulting Framework</h2>
+            <p class="mt-4 text-lg text-slate-600">A systematic, data-backed approach to diagnosing operational blockages and scaling manufacturing systems safely.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Phase 1 -->
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm relative overflow-hidden group hover:shadow-md transition-all">
+                <div class="absolute top-0 left-0 h-1 w-full bg-indigo-500"></div>
+                <div class="text-indigo-600 text-2xl font-bold font-mono mb-2">01</div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Assessment</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">Deep-dive technical audit of current manufacturing operations, supply chain visibility, and software integration bottlenecks.</p>
+            </div>
+            <!-- Phase 2 -->
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm relative overflow-hidden group hover:shadow-md transition-all">
+                <div class="absolute top-0 left-0 h-1 w-full bg-indigo-500"></div>
+                <div class="text-indigo-600 text-2xl font-bold font-mono mb-2">02</div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Strategy</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">Designing the future state architecture, matching requirements to modern ERP models (SAP/Odoo), and mapping prototyping lifecycles.</p>
+            </div>
+            <!-- Phase 3 -->
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm relative overflow-hidden group hover:shadow-md transition-all">
+                <div class="absolute top-0 left-0 h-1 w-full bg-indigo-500"></div>
+                <div class="text-indigo-600 text-2xl font-bold font-mono mb-2">03</div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Training</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">Up-skilling internal divisions, configuring remote development teams, and managing structural organizational change parameters.</p>
+            </div>
+            <!-- Phase 4 -->
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm relative overflow-hidden group hover:shadow-md transition-all">
+                <div class="absolute top-0 left-0 h-1 w-full bg-indigo-500"></div>
+                <div class="text-indigo-600 text-2xl font-bold font-mono mb-2">04</div>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">Execution</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">Agile implementation loops, cloud-based data tracking migration, final setup deployment, and operational go-live stabilization.</p>
+            </div>
+        </div>
+
+        <!-- TECH STACK METRICS BAR -->
+        <div class="mt-16 p-8 bg-slate-900 rounded-2xl text-white grid grid-cols-2 md:grid-cols-4 gap-6 text-center border border-slate-800">
+            <div>
+                <div class="text-xs text-indigo-400 font-bold uppercase tracking-wider font-mono">ERP Ecosystems</div>
+                <div class="text-lg font-semibold mt-1 text-slate-200">SAP / Oracle / Odoo</div>
+            </div>
+            <div>
+                <div class="text-xs text-indigo-400 font-bold uppercase tracking-wider font-mono">Cloud & Tools</div>
+                <div class="text-lg font-semibold mt-1 text-slate-200">AWS / Jira / Salesforce</div>
+            </div>
+            <div>
+                <div class="text-xs text-indigo-400 font-bold uppercase tracking-wider font-mono">Methodologies</div>
+                <div class="text-lg font-semibold mt-1 text-slate-200">Scrum / Agile Framework</div>
+            </div>
+            <div>
+                <div class="text-xs text-indigo-400 font-bold uppercase tracking-wider font-mono">Operational Quality</div>
+                <div class="text-lg font-semibold mt-1 text-slate-200">Lean Six Sigma Certified</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CASE STUDIES SECTION -->
+    <section id="case-studies" class="py-20 px-6 bg-slate-100 border-t border-b border-slate-200">
+        <div class="max-w-6xl mx-auto">
+            <div class="max-w-3xl mb-16">
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Recent Technical Engagements</h2>
+                <p class="mt-4 text-lg text-slate-600">Real enterprise interventions demonstrating business transformation, measurable system efficiency upgrades, and cost reduction.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                <!-- Case Study 1 -->
+                <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between">
+                    <div class="p-8">
+                        <div class="flex items-center justify-between gap-4 mb-4">
+                            <span class="px-3 py-1 bg-emerald-50 text-emerald-700 text-xs font-semibold rounded-full border border-emerald-200">
+                                <i class="fa-solid fa-chart-line mr-1"></i> +40% Process Efficiency
+                            </span>
+                            <span class="text-xs font-medium text-slate-500 uppercase tracking-wider font-mono">Automotive Sector</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Lead-Time Optimization & Data Centralization</h3>
+                        <p class="text-xs font-semibold text-indigo-600 mb-4">Client Focus: German Automotive Tier-1 Supplier</p>
+                        
+                        <div class="space-y-4 text-sm text-slate-600">
